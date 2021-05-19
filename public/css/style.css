@@ -1,0 +1,385 @@
+/* HTML, BODY */
+html,
+body{
+    width: 100% !important;
+    height: 100% !important;
+    box-sizing: border-box !important;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* SECTIONS - ALL */
+
+section{
+    width: 100% !important;
+}
+/*====================================================
+                        HOME
+======================================================*/
+
+#home {
+    height: 100%;
+}
+
+#home-cover {
+    height: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/back5.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size:  cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: blur(3px);
+    z-index: 1;
+    transition: .3s ease-in-out;
+}
+
+#home-content-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+    z-index: 9999;
+}
+
+#home-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+    /* text-align: center; */
+}
+
+#home-heading h3 {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 700;
+    margin: 20px 0 20px 0;
+}
+
+
+
+#home-cover1 {
+    height: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../img/1.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size:  cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 1;
+    transition: .3s ease-in-out;
+}
+
+#home-content-box1 {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-box-inner1 {
+    display: table-cell;
+    vertical-align: middle;
+    /* text-align: center; */
+}
+
+#home-heading1 h3 {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 700;
+    margin: 20px 0 20px 0;
+}
+
+
+#name_main {
+  width: 100%;
+  height: 100%;
+}
+
+#home-cover2 {
+    height: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../img/back6.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size:  cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 1;
+    transition: .3s ease-in-out;
+}
+
+#home-content-box2 {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-box-inner2 {
+    display: table-cell;
+    vertical-align: middle;
+    /* text-align: center; */
+}
+
+#home-heading2 h3 {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 700;
+    margin: 20px 0 20px 0;
+}
+
+/* SIDE NAV */
+#mySidenav a {
+    position: fixed ;
+    left: -120px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 170px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    z-index: 100;
+    border-radius: 0 5px 5px 0;
+  }
+  #mySidenav > a:first-child > i{
+    margin-left: 58px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    margin-top: 10px !important;
+  }
+  #mySidenav > a:nth-child(2) > i{
+    margin-left: 44px;
+    font-size: 24px;
+    padding-bottom: 10px;
+    margin-top: 10px !important;
+  }
+  #mySidenav > a:last-child > i{
+    margin-left: 22px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    margin-top: 10px !important;
+  }
+
+  #mySidenav a:hover {
+    left: 0;
+  }
+
+  #home_side {
+    top: 20px;
+    background-color: rgb(32, 137, 197, .8);
+  }
+
+  #analysis_side {
+    top: 94px;
+    background-color: rgba(241, 68, 68, 0.8);
+  }
+
+  #contact_side {
+    top: 168px;
+    background-color: rgba(46, 177, 68, 0.8);
+  }
+
+/*====================================================
+                        PARALLAX (Generic)
+======================================================*/
+
+.bg-parallax {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+}
+
+/*====================================================
+                        BUTTONS (Generic)
+======================================================*/
+
+.btn-general {
+    border-width: 2px !important;
+    border-radius: 0 !important;
+    padding: 12px 26px 12px 26px !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    text-transform: uppercase !important;
+}
+
+.btn-white {
+    border-color: #fff !important;
+    color: #fff !important;
+    transition: .2s ease-in-out;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    background-color: #fff !important;
+    color: #41464b !important;
+}
+
+.btn-blue {
+    border-color: #34c6d3 !important;
+    color: #34c6d3;
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+    background-color: #34c6d3 !important;
+    color: #fff !important;
+}
+
+.btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 22px;
+    padding: 3px 15px;
+    border-radius: 0;
+    display: none;
+}
+
+
+/*====================================================
+                       ANIMATE
+======================================================*/
+
+#home-cover,
+#home-heading,
+#home-btn {
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+}
+
+#home-cover {
+    -webkit-animation-delay: .1s;
+            animation-delay: .1s;
+}
+
+#home-heading {
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+}
+
+#home-btn {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+}
+
+
+
+
+
+
+#home-cover1,
+#home-heading1,
+#home-btn1 {
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+}
+
+#home-cover1 {
+    -webkit-animation-delay: .1s;
+            animation-delay: .1s;
+}
+
+#home-heading1 {
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+}
+
+#home-btn1 {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+            margin-top: 20px;
+}
+
+
+#home-cover2,
+#home-heading2,
+#home-btn2 {
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+}
+
+#home-cover2 {
+    -webkit-animation-delay: .1s;
+            animation-delay: .1s;
+}
+
+#home-heading2 {
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+}
+
+#home-btn2 {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+            margin-top: 20px;
+}
+
+
+/*====================================================
+                       CONTENT (Generic)
+======================================================*/
+
+.content-box {
+    padding: 60px 0 60px 0;
+}
+
+.content-title {
+    font-size: 30px !important;
+    font-weight: 500 !important;
+    text-align: center;
+    margin: 0 0 10px 0;
+    transition: .3s ease-in-out !important;
+}
+
+.content-title-white {
+    color: #fff;
+}
+.margin_top {
+    margin-top: 100px !important;
+}
+
+.content-title-underline {
+    width: 50px;
+    height: 3px;
+    background-color: rgb(32, 137, 197);
+    margin: 0 auto 30px auto;
+}
+
+
+/* H3 : title :  */
+h3.title {
+    color: rgb(32, 137, 197);
+    font-size: 30px;
+}
+/* JUST for fun :) */
+h3.title_rgb {
+    background: -webkit-linear-gradient(rgb(32, 137, 197), rgb(51, 187, 119));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* CONTENT */
+div.content {
+    text-align: center !important;
+}
+
+
+/* FULL */
+
+/* GENERIC ROW BOOTSTRAP */
+.row {
+    width: 100% !important;
+}
+#main {
+  width: 100% !important;
+  height: 100% !important;
+}

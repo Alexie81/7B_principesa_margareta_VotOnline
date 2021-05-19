@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 
   <!-- bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <!-- animate CSS -->
   <link rel="stylesheet" href="css/animate/animate.css">
@@ -40,18 +40,119 @@
 
   <!-- main style -->
   <link rel="stylesheet" href="css/style.css">
+
+
+  <!-- Select2 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+
+
   <!-- End -->
 </head>
 
 <body>
+
+
+  <section id="home">
+
+              <div id="home-cover" class="bg-parallax animated fadeIn"></div>
+
+                  <div id="home-content-box">
+
+                      <div id="home-content-box-inner" class="text-center">
+
+                          <div id="home-heading" class="animated zoomIn">
+                              <h3>Vot Online 7B</h3>
+                          </div>
+                          <div id="home-btn" class="wow animated zoomIn" data-wow-delay="1s">
+                              <a class="btn btn-general btn-white smooth-scroll" href="#main" role="button" title="View Our Work">Alege materia  &#x2794;</a>
+                          </div>
+
+                      </div>
+
+                  </div>
+
+
+
+  </section>
+
+  <section id="main" style="display:none;">
+    <div id="home-cover1" class="bg-parallax animated fadeIn">
+
+        <div id="home-content-box1">
+
+            <div id="home-content-box-inner1" class="text-center">
+
+                <div id="home-heading1" class="animated zoomIn">
+                    <h3>Alege Materia: </h3>
+                </div>
+                <!-- Dropdown -->
+                <div class="wow animated zoomIn" data-wow-delay="1s">
+<select id='selUser' style='width: 200px;'  >
+  <option value='0' disabled selected>--Selecteaza--</option>
+  <option value='sociala'>Ed. Sociala</option>
+  <option value='mate'>Matematica</option>
+  <option value='rom'>Romana</option>
+  <option value='dirigentie'>Dirigentie</option>
+  <option value='franc'>Engleza</option>
+  <option value='franc'>Franceza</option>
+  <option value='desen'>Desen</option>
+  <option value='sport'>Sport</option>
+</select>
+</div>
+
+<div id="home-btn1" class="wow animated zoomIn" data-wow-delay="1s">
+    <a class="btn btn-general btn-white smooth-scroll" href="#name_main" role="button" title="View Our Work">Inainte  &#x2794;</a>
+</div>
+
+            </div>
+
+        </div>
+        </div>
+
+
+  </section>
+
+
+  <section id="name_main" style="display:none;">
+
+              <div id="home-cover2" class="bg-parallax animated fadeIn">
+
+                  <div id="home-content-box2">
+
+                      <div id="home-content-box-inner2" class="text-center">
+
+                          <div id="home-heading2" class="animated zoomIn">
+                              <h3>Introduce numele complet:</h3>
+                          </div>
+
+                          <div class="input-group wow animated zoomIn" data-wow-delay="2s" style="width: 280px !important; float:none !important; margin: 0 auto !important;">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                              </div>
+                              <input type="text" class="form-control" placeholder="Numele..." aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                          <div id="home-btn2" class="wow animated zoomIn" data-wow-delay="1s">
+                              <a class="btn btn-general btn-white smooth-scroll" href="#main" role="button" title="View Our Work">Inainte  &#x2794;</a>
+                          </div>
+
+                      </div>
+
+                  </div>
+                  </div>
+
+
+
+  </section>
+
+
+
 
   <!-- SCRIPTS -->
 
   <!-- jQuery -->
 <script src="js/jquery.js"></script>
 
-<!-- bootstrap JS -->
-<script src="js/bootstrap/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <!-- WOW JS -->
 <script src="js/wow/wow.min.js"></script>
@@ -79,6 +180,9 @@
 <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
 
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<!-- Select2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 
   <script type="text/javascript" src="js/main.js"></script>
 </body>
