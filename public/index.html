@@ -64,7 +64,7 @@
                               <h3>Vot Online 7B</h3>
                           </div>
                           <div id="home-btn" class="wow animated zoomIn" data-wow-delay="1s">
-                              <a class="btn btn-general btn-white smooth-scroll" href="#main" role="button" title="View Our Work">Alege materia  &#x2794;</a>
+                              <a class="btn btn-general btn-white smooth-scroll" onclick="javascript:document.getElementById('main').style.display = 'block';" href="#main" role="button" title="View Our Work">Alege materia  &#x2794;</a>
                           </div>
 
                       </div>
@@ -88,7 +88,7 @@
                 <!-- Dropdown -->
                 <div class="wow animated zoomIn" data-wow-delay="1s">
 <select id='selUser' style='width: 200px;'  >
-  <option value='0' disabled selected>--Selecteaza--</option>
+  <option value='' disabled selected>--Selecteaza--</option>
   <option value='sociala'>Ed. Sociala</option>
   <option value='mate'>Matematica</option>
   <option value='rom'>Romana</option>
@@ -101,7 +101,7 @@
 </div>
 
 <div id="home-btn1" class="wow animated zoomIn" data-wow-delay="1s">
-    <a class="btn btn-general btn-white smooth-scroll" href="#name_main" role="button" title="View Our Work">Inainte  &#x2794;</a>
+    <a class="btn btn-general btn-white smooth-scroll" onclick="ver1()" href="#name_main" role="button" title="View Our Work">Inainte  &#x2794;</a>
 </div>
 
             </div>
@@ -129,10 +129,10 @@
                               <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1">@</span>
                               </div>
-                              <input type="text" class="form-control" placeholder="Numele..." aria-label="Username" aria-describedby="basic-addon1">
+                              <input type="text" id="name_input" class="form-control" placeholder="Numele..." aria-label="Username" aria-describedby="basic-addon1">
                           </div>
                           <div id="home-btn2" class="wow animated zoomIn" data-wow-delay="1s">
-                              <a class="btn btn-general btn-white smooth-scroll" href="#main" role="button" title="View Our Work">Inainte  &#x2794;</a>
+                              <a class="btn btn-general btn-white smooth-scroll" onclick="ver2()" href="#" role="button" title="View Our Work">Inainte  &#x2794;</a>
                           </div>
 
                       </div>

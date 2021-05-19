@@ -20,3 +20,15 @@ $(document).ready(function(){
   // Initialize select2
     $("#selUser").select2();
 });
+
+function ver1(){
+  if(document.getElementById('selUser').value === '' || document.getElementById('selUser').value === null){alert('Selectati o materie din lista !')}else{document.getElementById('name_main').style.display = 'block';}
+}
+
+function ver2(){
+  if(document.getElementById('name_input').value === '' || document.getElementById('name_input').value === null){
+    alert('Scrieti numele !');
+  } else {
+
+  }
+}
