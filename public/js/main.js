@@ -29,6 +29,8 @@ function ver2(){
   if(document.getElementById('name_input').value === '' || document.getElementById('name_input').value === null){
     alert('Scrieti numele !');
   } else {
-
+    localStorage.setItem('numele: ', document.getElementById('name_input').value);
+    localStorage.setItem('materia: ', document.getElementById('selUser').value);
+    window.location.href = "alege/index.html";
   }
 }
