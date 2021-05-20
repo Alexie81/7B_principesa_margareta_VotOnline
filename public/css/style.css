@@ -135,6 +135,14 @@ section{
     margin: 20px 0 20px 0;
 }
 
+#home-heading_alege h3 {
+    color: #000;
+    font-size: 35px;
+    font-weight: 700;
+    float: none !important;
+    margin: 20px auto 0 auto !important;
+}
+
 /* SIDE NAV */
 #mySidenav a {
     position: fixed ;
