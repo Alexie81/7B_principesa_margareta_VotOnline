@@ -1,9 +1,22 @@
-window.onload = function() {
-  window.scrollTo(0, 0)
-}
+var firebaseConfig = {
+    apiKey: "AIzaSyCnU8iJzJJtceBOkMO1G-1H6XDjmdKcwwM",
+    authDomain: "votonline-7bspm.firebaseapp.com",
+    databaseURL: "https://votonline-7bspm-default-rtdb.firebaseio.com",
+    projectId: "votonline-7bspm",
+    storageBucket: "votonline-7bspm.appspot.com",
+    messagingSenderId: "85825162949",
+    appId: "1:85825162949:web:2a1cfb3f1aece12a2f6aac",
+    measurementId: "G-0D6L6RDK1G"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig)
 /*====================================================
                     SMOOTH SCROLLING
 ====================================================*/
+window.onload = function() {
+  window.scrollTo(0, 0)
+}
+
 $(function () {
 
     $("a.smooth-scroll").click(function (event) {
@@ -36,4 +49,17 @@ function ver2(){
     localStorage.setItem('materia: ', document.getElementById('selUser').value);
     window.location.href = "alege/index.html";
   }
+}
+
+function voteaza() {
+var selected_val = $('input[name="demo"]:checked').val();
+firebase.database().ref('database/'+selected_val).once('value', snap => {
+  var x = parseInt(snap.val().val) + 1;
+  firebase.database().ref('database/'+selected_val).update({
+    val: x
+  })
+  localStorage.setItem('votare', 'da');
+  setTimeout(function(){window.location.href = "../index.html"}, 1000)
+});
+
 }
