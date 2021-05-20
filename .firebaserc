@@ -1,14 +1,5 @@
 {
   "projects": {
-    "default": "votonline-7b"
-  },
-  "targets": {
-    "votonline-7b": {
-      "hosting": {
-        "VotOnline": [
-          "VotOnline"
-        ]
-      }
-    }
+    "default": "votonline-7bspm"
   }
 }
