@@ -52,6 +52,10 @@ function ver2(){
 }
 
 function voteaza() {
+  if(String(localStorage.getItem('votare')) === "da"){
+    alert("Ups.. Nu poti vota ! Ai mai votat.")
+  } else {
+    document.getElementById('del_nee').style.display = "none";
 var selected_val = $('input[name="demo"]:checked').val();
 firebase.database().ref('database/'+selected_val).once('value', snap => {
   var x = parseInt(snap.val().val) + 1;
@@ -59,7 +63,18 @@ firebase.database().ref('database/'+selected_val).once('value', snap => {
     val: x
   })
   localStorage.setItem('votare', 'da');
-  setTimeout(function(){window.location.href = "../index.html"}, 1000)
+  setTimeout(function(){window.location.href = "../index.html"}, 1000);
 });
 
+}
+}
+
+function need_vot(){
+  var x = String(localStorage.getItem("votare"));
+  console.log(x)
+  if(x === "da"){
+    alert("Ups.. Nu poti vota ! Ai mai votat.")
+  } else {
+    window.location.href = "../alege_optiune/index.html"
+  }
 }
