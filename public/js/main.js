@@ -72,7 +72,7 @@ firebase.database().ref('database/'+selected_val).once('value', snap => {
 function need_vot(){
   var x = String(localStorage.getItem("votare"));
   console.log(x)
-  if(x === "da"){
+  if(x === "da") {
     alert("Ups.. Nu poti vota ! Ai mai votat.")
   } else {
     window.location.href = "../alege_optiune/index.html"
