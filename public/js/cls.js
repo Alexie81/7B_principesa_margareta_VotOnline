@@ -1,3 +1,8 @@
+window.onload = function() {
+  document.getElementById('main_content').style.display = "none";
+  document.getElementById('signIn').style.display = "block";
+  // setTimeout(function(){console.clear();}, 500)
+}
 var firebaseConfig = {
     apiKey: "AIzaSyCnU8iJzJJtceBOkMO1G-1H6XDjmdKcwwM",
     authDomain: "votonline-7bspm.firebaseapp.com",
@@ -14,7 +19,6 @@ var firebaseConfig = {
 let scores = null, keys = null;
 firebase.database().ref("database/").on('value', snap => {
   console.log("New Data !");
-  console.clear();
  scores = snap.val();
  let dict = ["Andreea", "Cristescu", "Raisa", "Simon", "Victor"];
  let real_names = ["Drumea Andreea", "Cristescu Eduard", "Sandu Raisa", "Pirlogea Simon", "Zorila Victor"];
@@ -54,3 +58,38 @@ firebase.database().ref("database/").on('value', snap => {
  console.log([...main_dict]);
 
 });
+
+
+//Main content id: "main_content"
+const inputs = document.querySelectorAll('.input');
+
+function focusFunc(){
+    let parent = this.parentNode.parentNode;
+    parent.classList.add('focus');
+}
+
+function blurFunc(){
+    let parent = this.parentNode.parentNode;
+    if(this.value == ""){
+        parent.classList.remove('focus');
+    }
+}
+
+inputs.forEach(input => {
+    input.addEventListener('focus', focusFunc);
+    input.addEventListener('blur', blurFunc);
+});
+// fields[0].addEventListener("keyup",check);
+// fields[1].addEventListener("keyup",check);
+
+// document.querySelector(".show-password").addEventListener("click",function(){
+//   if(this.classList[2] == "fa-eye-slash"){
+//     this.classList.remove("fa-eye-slash");
+//     this.classList.add("fa-eye");
+//     fields[1].type = "text";
+//   }else{
+//     this.classList.remove("fa-eye");
+//     this.classList.add("fa-eye-slash");
+//     fields[1].type = "password";
+//   }
+// });
