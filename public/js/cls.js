@@ -3,6 +3,7 @@ window.onload = function() {
   document.getElementById('signIn').style.display = "block";
   // setTimeout(function(){console.clear();}, 500)
 }
+var display = "none";
 var firebaseConfig = {
     apiKey: "AIzaSyCnU8iJzJJtceBOkMO1G-1H6XDjmdKcwwM",
     authDomain: "votonline-7bspm.firebaseapp.com",
@@ -93,3 +94,32 @@ inputs.forEach(input => {
 //     fields[1].type = "password";
 //   }
 // });
+document.getElementById('login_sub').addEventListener('submit', function(e) {
+  e.preventDefault();
+  let username = document.getElementById('usr').value;
+  let password = document.getElementById('pwd').value;
+  if(username === "7B" && password === "Cls7bsmpg"){
+    document.getElementById("signIn").style.display = "none";
+    Swal.fire({
+  position: 'center',
+  icon: 'success',
+  title: 'Logare cu succes !',
+  timer: 1500
+});
+} else {
+  Swal.fire({
+position: 'center',
+icon: 'error',
+title: 'Datele de conectare sunt invalide !',
+timer: 1500
+});
+document.getElementById('pwd').value = "";
+}
+});
+setInterval(function(){
+  if(display === "none"){
+    document.getElementById("main_content").style.display = "none";
+  } else {
+    document.getElementById("main_content").style.display = "block";
+  }
+}, 1000)
