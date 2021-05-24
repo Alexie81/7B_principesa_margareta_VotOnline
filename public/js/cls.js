@@ -96,10 +96,10 @@ inputs.forEach(input => {
 // });
 document.getElementById('login_sub').addEventListener('submit', function(e) {
   e.preventDefault();
-  let username = document.getElementById('usr').value;
   let password = document.getElementById('pwd').value;
-  if(username === "7B" && password === "Cls7bsmpg"){
+  if(password === "Cls7bsoc"){
     document.getElementById("signIn").style.display = "none";
+    display = "block";
     Swal.fire({
   position: 'center',
   icon: 'success',
